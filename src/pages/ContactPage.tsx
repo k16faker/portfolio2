@@ -33,7 +33,7 @@ const ContactPage = () => {
                 <div className='flex flex-col gap-5 p-[50px]'>
                     <input type="email" name="user_email" placeholder="Email" className='w-[400px] h-[50px] border-2 border-black rounded-2xl p-[10px] text-black' />
                     <textarea placeholder="Message" name="message" className='w-[400px] h-[200px] border-2 border-black rounded-2xl p-[10px] text-black' />
-                    <input type='submit' className='w-[400px] h-[50px] bg-black rounded-2xl hover:scale-105 transition-all text-center text-white' value='Send'/>
+                    <input type='submit' className='w-[400px] h-[50px] bg-black rounded-2xl hover:scale-105 transition-all text-center text-white hover:cursor-pointer' value='Send'/>
                 </div>
             </form>
             <div>
