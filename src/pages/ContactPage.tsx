@@ -10,8 +10,8 @@ const ContactPage = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_xny0k04', 'template_k1664y1', form.current as HTMLFormElement, {
-        publicKey: 'lPOCnERB0dLvxSMxk',
+      .sendForm(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, form.current as HTMLFormElement, {
+        publicKey: process.env.REACT_APP_PUBLIC_KEY,
       })
       .then(
         () => {
