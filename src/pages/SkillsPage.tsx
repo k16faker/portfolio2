@@ -9,10 +9,15 @@ const Skills = [
 
 const Skills2 = [
   "React",
-  "Java",
-  "SpringBoot",
+  "Redux",
   "Firebase",
 ];
+
+const Skills3 = [
+  "Java",
+  "SpringBoot",
+];
+
 
 const SkillsPage = () => {
   return (
@@ -28,8 +33,18 @@ const SkillsPage = () => {
           </li>
         ))}
       </ul>
-      <ul className="flex mt-[50px] w-[1000px] mx-auto justify-between">
+      <ul className="flex mt-[100px] w-[800px] mx-auto justify-between">
         {Skills2.map((skill) => (
+          <li
+            key={skill}
+            className="text-black text-center pt-3 bg-white w-[100px] h-[50px] item-center align-middle rounded-3xl transition-all hover:scale-110 text-xl"
+          >
+            {skill}
+          </li>
+        ))}
+      </ul>
+      <ul className="flex mt-[100px] w-[600px] mx-auto justify-between">
+        {Skills3.map((skill) => (
           <li
             key={skill}
             className="text-black text-center pt-3 bg-white w-[100px] h-[50px] item-center align-middle rounded-3xl transition-all hover:scale-110 text-xl"
