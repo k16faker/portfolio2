@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import TypingEffect from "../TypingEffect";
 
 const AboutMePage = () => {
   return (
@@ -13,7 +14,7 @@ const AboutMePage = () => {
           />
         </div>
         <div className="w-1/2 pt-[70px]">
-          <h1 className="text-4xl font-bold mb-3 text-white">About me</h1>
+          <TypingEffect text="HHello, I am Seong Jun Park" speed={100} />
           <p className="text-lg text-white">
             I am a web developer from the South Korea. I'm currently studying at alone. I have a passion for web development and love to create new websites. I am a fast learner and I am always looking for new technologies to learn.
           </p>
